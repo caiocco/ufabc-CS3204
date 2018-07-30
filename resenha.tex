@@ -1,0 +1,137 @@
+%%
+%% Copyright (c) 2001, 2009, 2010 The American Physical Society.
+%%
+%% See the REVTeX 4 README file for restrictions and more information.
+%%
+% This is a template for producing manuscripts for use with REVTEX 4.0
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
+% Add 'draft' option to mark overfull boxes with black boxes
+% Add 'showpacs' option to make PACS codes appear
+% Add 'showkeys' option to make keywords appear
+%\documentclass[aps,prb,showpacs,reprint,groupedaddress]{revtex4-1}
+%\documentclass[aps,showpacs,prl,preprint,superscriptaddress,twocolumn]{revtex4-1}
+%\documentclass[showpacs,aip,apl,twocolumn,groupedaddress]{revtex4-1}
+%\documentclass[aps,showpacs,apl,twocolumn,reprint,groupedaddress]{revtex4-1}
+%\documentclass[nature,twocolumn,reprint,groupedaddress]{revtex4-1}
+\documentclass[hidelinks,a4paper,reprint,prl]{revtex4}
+
+% Alterando o espaçamento das linhas
+\linespread{1.4}
+
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev4-1}
+\bibliographystyle{abntex2-num}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts}
+\usepackage{xcolor}
+\usepackage{lineno}
+\definecolor{Red}{rgb}{0.9,0.0,0.1}
+\definecolor{Blue}{rgb}{0.1,0.1,0.9}
+\hyphenation{ma-the-ma-tics e-qui-li-bri-um Bourdieu Ginzburg Adorno Lacey Bradbury Latour Mauss Rosenberg}
+
+\usepackage[brazil]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{natbib}
+\usepackage[autostyle]{csquotes}  
+
+% Configurando o pacote hyperref
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle    = {Resenha},
+	pdfsubject  = {Economia},
+	pdfauthor   = {Caio César Carvalho Ortega},
+	pdfcreator  = {Caio César Carvalho Ortega},
+	pdfproducer = {Caio César Carvalho Ortega},
+	pdfkeywords = {terceira itália, vale do silício, regiões, regiões ganhadoras, economia, heterodoxia, bagnasco, acumulação, acumulação flexível, pós-fordismo}
+}
+
+\makeatletter
+\newcommand*{\citenst}[2][]{%
+	\begingroup
+	\let\NAT@mbox=\mbox
+	\let\@cite\NAT@citenum
+	\let\NAT@space\NAT@spacechar
+	\let\NAT@super@kern\relax
+	\renewcommand\NAT@open{[}%
+	\renewcommand\NAT@close{]}%
+	\cite[#1]{#2}%
+	\endgroup
+}
+\makeatother
+
+\begin{document}
+	%\linenumbers
+	% Use the \preprint command to place your local institutional report
+	% number in the upper righthand corner of the title page in preprint mode.
+	% Multiple \preprint commands are allowed.
+	% Use the 'preprintnumbers' class option to override journal defaults
+	% to display numbers if necessary
+	%\preprint{}
+	
+	%Title of paper
+	\title{Resenha de capítulo}
+	
+	% repeat the \author .. \affiliation etc. as neededcitacao
+	% \email, \thanks, \homepage, \altaffiliation all apply to the current
+	% author. Explanatory text should go in the []'s, actual e-mail
+	% address or url should go in the {}'s for \email and \homepage.
+	% Please use the appropriate macro foreach each type of information
+	
+	% \affiliation command applies to all authors since the last
+	% \affiliation command. The \affiliation command should follow the
+	% other information
+	% \affiliation can be followed by \email, \homepage, \thanks as well.
+	%\author{}
+	
+	\affiliation{Universidade Federal do ABC, Centro de Engenharia, Modelagem e Ciências Sociais Aplicadas, São Bernardo do Campo-SP, Brasil}
+	
+	\author{Caio César Carvalho Ortega, RA 21038515}
+	
+	%\date{\today}
+	
+	\maketitle
+
+	% ----------------------------------------------------------
+	
+	\section{Prólogo}
+	
+	O propósito do presente trabalho é realizar uma resenha do sétimo capítulo do livro ``As regiões ganhadoras–distritos e redes: os novos paradigmas da geografia económica''\footnote{Optei por manter o texto original em português de Portugal ao citar qualquer trecho da obra} para a disciplina de Modelos Econômicos e Análise das Dinâmicas Territoriais (CS3204), respeitando o limite de duas páginas.
+	
+	\section{Resenha}
+	
+	\subsection{Visão geral}
+	
+	O capítulo desenvolve uma perspectiva crítica a partir de fontes secundárias, citando nomes como Bagnasco, Havery, Sabel e Storper \cite[p.104, p.114 ]{martinelli1994}, na qual busca-se apontar que a transição para um regime de capitalista de acumulação flexível não elimina as grandes empresas surgidas durante o fordismo, bem como que as grandes empresas poderão se adaptar cada vez mais, de forma a suplantar arranjos com forte caráter territorial de escala local, como são os casos da Terceira Itália e do Vale do Silício, que suscitaram (sobretudo o primeiro) pesquisas e curiosidade internacionalmente. Para os autores, com repercussões diversas, a ``produção e concorrência são perfeitamente compatíveis com um aumento da flexibilidade'' \cite[p.103]{martinelli1994} que possa beneficiar grandes empresas e oligopólios.
+	
+	\subsection{Conceitos adotados}
+	
+	Para melhor compreensão do argumento, faz-se necessário algumas explicitar terminologias conceituadas ao longo do capítulo, tais como: a (i) \textbf{especialização flexível}, fruto de imposição devido à necessidade competitividade, a produção passa a organizada de forma flexível, o que significa reação mais rápida a pressões mercadológicas, com menor rigidez na organização da empresa ou entre firmas, afetando inclusive fornecedores. São elementos da especialização flexível: tecnologias flexíveis (máquinas polivalentes, tecnologias de automação programável e automação flexível para produção não-padronizada), desintegração (geralmente vertical, com múltiplas empresas, cada uma especializada numa parte da produção, mas também pode ser entendida pela descentralização em grandes empresas, sendo que os dois casos enfraquecem o poder sindical), produção de escala variável (pequena, nos arranjos de PMEs\footnote{Pequenas e Médias Empresas} ou fruto de uma relação hierarquizada ou no mínimo compatível com a externalização de fases da produção por grandes empresas), relações concorrenciais entre empresas, autorregulação, requalificação da mão-de-obra. \cite[p.104--106]{martinelli1994} e; (ii) \textbf{flexibilidade da mão-de-obra:}, que ``pode ser quantitativa, se estiver ligada às flutuações da procura ou qualitativa ou funcional, se se tiver em conta a possibilidade de atribuição de tarefas múltiplas aos trabalhadores no seio do processo de produção'' \cite[p.107]{martinelli1994}, no entanto, ``a flexibilidade enquanto tal não parece ligar-se directamente a qualquer tipo de particular de processo de trabalho''. \cite[p.107]{martinelli1994}, além disso; a (iii) acumulação flexível tem entre suas características-chave, a ``combinação da crescente atomização do sistema produtivo com o reforço da concentração do capital e das estruturas de controle'' \cite[p.115]{martinelli1994}, ou seja, diante da complexa reorganização do sistema produtivo, a fragmentação deste não torna o capital e as estruturas de controle igualmente fragmentadas \cite[p.114]{martinelli1994}.
+	
+	\subsection{Síntese do argumento}
+	
+	Os autores consideram que as grandes empresas podem se beneficiar das características que comumente são elencadas como parte da transição para um regime de acumulação flexível e, não só, que também possuem poder e capacidade de reorganização, de forma que o contexto dos anos 1970 e 1980 \cite[p.117]{martinelli1994}, em conjunto com aspectos territoriais específicos e de improvável replicabilidade, não são fatores determinantes para criar uma dicotomia entre as grandes empresas e as PMEs, no sentido de que a primeira é inevitavelmente rígida. A precarização do trabalho assalariado \cite[p.109; p.115--117]{martinelli1994} e a evolução tecnológica da maquinaria, por exemplo, são elementos que podem ser apropriados por grandes empresas. Os autores também apontam que a especialização do trabalho não necessariamente resulta em mão-de-obra altamente qualificada, como é o caso da Terceira Itália \cite[p.109]{martinelli1994}. Para os autores, há compatibilidade entre a fragmentação da produção (fruto da flexibilização) e a integração organizacional e financeira \cite[p.113]{martinelli1994}, de forma que os tipos de reestruturação possíveis ----- busca de nichos de mercado, economias de escala estratégicas, sinergias de grupo, além de aquisições (que podem manter a autonomia), \textit{joint-ventures} e externalização, adotadas ou não em conjunto ----- ``permitem às grandes empresas reproduzir a flexibilidade dos distritos industriais marshallianos, sendo distinguidas das pequenas empresas em regime de especialização flexível devido ao elevado volume de recursos financeiros e posição dominante no mercado \cite[p.113]{martinelli1994}.
+	
+	\subsection{Opinião pessoal}
+	
+	Se por um lado o capítulo é interessante por deixar claro que a acumulação flexível é um fenômeno econômico que permanece se transformando, por outro, é triste observar que reforça a ruptura do pacto social que envolvia a Escola Keynesiana e a busca pela produtividade a partir do bem-estar. Como os autores acertadamente destacam ao fazer menção para o caso do Vale do Silício, as desigualdades espaciais continuam a ser reproduzidas com a acumulação flexível \cite[p.110; p.116]{martinelli1994}, ao passo que também persistem desigualdades relacionais entre firmas de diferentes tipos \cite[p.114]{martinelli1994} e a precarização do trabalho assalariado segue em tendência crescente. A ideia de desenvolvimento regional está longe de ser uma panaceia ou de estar livre de sérias contradições. Fica a impressão de que o mercado tende a se reconcentrar e formar oligopólios também com a flexibilização da acumulação, com um contexto ainda mais desfavorável para aqueles na periferia, seja a periferia entendida como área distante dos centros mais desenvolvidos no território de um mesmo país e suas unidades de divisão político-administrativa, seja a periferia entendida em relação à posição do país e sua economia em meio ao capitalismo globalizado.
+	
+	% ----------------------------------------------------------
+	
+	\bibliography{fontes.bib}
+	
+\end{document}
+
+
